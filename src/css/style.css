@@ -1,0 +1,197 @@
+@import "./homepage.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary-bg: #0f0f0f;
+  --secondory-bg: #7a7a7a;
+  --primary-color: #676767;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Common Class  */
+.left-to-right-g {
+  background: rgb(80, 75, 75);
+  background: linear-gradient(139deg, rgb(34 34 34) 0%, rgb(18 18 18) 100%);
+  border-radius: 42px;
+  border: 0.5px solid #282828;
+}
+.right-to-left-g {
+  background: rgb(80, 75, 75);
+  background: linear-gradient(139deg, rgb(18 18 18) 100%, rgb(34 34 34) 0%);
+  border-radius: 42px;
+  border: 0.5px solid #282828;
+}
+body {
+  background: var(--primary-bg);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+.c-button {
+  background: #383838;
+  color: #fff;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 30px;
+}
+.c-button:hover,
+.c-button:active,
+.c-button:focus {
+  background: #fff;
+}
+
+/* Header Section   */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.header .logo .main-logo {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.header .menu ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.header .menu ul li {
+  margin: 0 1rem;
+}
+
+.header .menu ul li a {
+  color: var(--primary-color);
+
+  transition-duration: 400ms;
+}
+.header .menu ul li a:hover,
+.header .menu ul li a:active,
+.header .menu ul li a:focus {
+  color: #fff;
+}
+
+/* Footer Section  */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+footer .f-logo {
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+footer .f-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+footer .f-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+footer .f-menu ul li {
+  margin: 0 1rem;
+}
+footer .f-menu ul li a {
+  transition-duration: 400ms;
+  color: var(--primary-color);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+}
+
+footer .copy-right {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+footer .copy-right p {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+footer .copy-right p .last-logo {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+/* <!-- Social Section --> */
+.social-section {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 1;
+}
+.social-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-section ul li a {
+  background: #383838;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 99%;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 400ms;
+}
+
+.social-section ul li a:hover,
+.social-section ul li a:active,
+.social-section ul li a:focus {
+  background: #fff;
+}
+.social-section ul li a:hover i,
+.social-section ul li a:active i,
+.social-section ul li a:focus i {
+  color: #0f0f0f;
+}
+
+.social-section ul li a i {
+  font-size: 28px;
+  padding: 0.7rem;
+  border-radius: 99%;
+  margin: 5px;
+  color: #fff;
+  transition-duration: 400ms;
+}
+.social-section ul li a .linkdin {
+  font-size: 24px;
+}
+.social-section ul li a .phone {
+  font-size: 20px;
+}
